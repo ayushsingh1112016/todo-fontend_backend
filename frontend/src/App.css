@@ -1,0 +1,31 @@
+.logo {
+    width: 20px;  /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    transition: filter 0.3s;
+  }
+  
+  /* Hover styles for delete button */
+  button:hover.bg-red-500 {
+    background-color: #ef4444; /* Tailwind's red-500 */
+  }
+  
+  button:hover.bg-red-500 .logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+  
+  /* Hover styles for edit button */
+  button:hover.bg-blue-500 {
+    background-color: #3b82f6; /* Tailwind's blue-500 */
+  }
+  
+  button:hover.bg-blue-500 .logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+  
+  .delete-btn:hover .logo svg {
+    fill: white; /* Change to white on hover */
+  }
+  
+  .edit-btn:hover .logo svg {
+    fill: white; /* Change to white on hover */
+  }
